@@ -1,0 +1,69 @@
+Package task_one;
+
+import java.util.scanner;//import scanner
+
+Public class question 2{
+
+  //main function
+  Public static void main(string||args){
+
+   Scanner input = new scanner(system.in);// my
+Scanner object
+   
+   //my variables
+   double unit_1, unit_2, unit_3, unit_4, unit_5,
+   average; 
+
+   system.out.println("To your average mark for 
+last semester,fill in the following.");
+   inputting the five units 
+   System.out.println("\nUnit 1:");
+   Unit_1 = input.nextDouble();
+   System.out.println("\nUnit 2:");
+   Unit_2 = input.nextDouble();
+   System.out.println("\nUnit 3:");
+   Unit_3 = input.nextDouble();
+   System.out.println("\nUnit 4:");
+   Unit_4 = input.nextDouble();
+   System.out.println("\nUnit 5:");
+   Unit_5 = input.nextDouble();
+
+   //get rounded average mark 
+   average = findAverage(Unit_1, Unit_2, Unit_3, Unit_4,
+Unit_5);
+
+    //displaying output
+    System.out.println("\nYour average mark:"+
+average);
+  }
+
+    Static double findAverage(double unit_1, double 
+unit_2, double unit_3, double unit_4, double unit_5){
+
+    //get the average
+    var myAverage =(unit_1 + unit_2 + unit_3 + unit _4   
++ unit_5)/5;
+
+    //round the average
+    var roundAverage=Math.round(my average*
+100.0)/100.0;
+    return roundAverage;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
